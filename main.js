@@ -1,5 +1,5 @@
 // Chiedere all’utente il cognome
-var cognome = prompt("Inserisci il tuo cognome");
+var cognome = prompt("Inserisci il tuo cognome").toUpperCase();
 
 // inserirlo in un array con altri cognomi: ‘Bianchi’, ‘Rossi’, ‘Duzioni’, ‘Balsano’, ‘Verdi’
 var lista = [
@@ -22,4 +22,5 @@ for (var i = 0; i < lista.length; i++) {
 
 // scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova
 var position = lista.indexOf(cognome);
-document.getElementById('posizione').innerHTML = position;
+i = 0;
+document.getElementById('posizione').innerHTML = position + (i + 1);

@@ -13,7 +13,8 @@ lista.push(cognome);
 console.log(lista);
 
 // stampa la lista ordinata alfabeticamente
-for (var i=0; i<lista.length; i++) {
+lista.sort(); //viene utilizzato per ordinare alfabeticamente
+for (var i = 0; i < lista.length; i++) {
   var item = lista[i];
   var listaContainer = document.getElementById('lista-container').innerHTML;
   document.getElementById('lista-container').innerHTML = listaContainer + "<li>" + item + "</li>";
